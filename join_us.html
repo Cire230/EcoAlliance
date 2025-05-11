@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter - Varecia Travel Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-3xl text-green-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">ÉcoAlliance</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 font-medium py-2 px-1">Accueil</a>
+                    <a href="missions.html" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">Nos Missions</a>
+                    <a href="#article" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">Actualités</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">Nous Contacter</a>
+                    <a href="join_us.html" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">S'inscrire</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-800 font-medium">Accueil</a>
+                <a href="missions.html" class="block py-2 text-gray-600 hover:text-gray-800">Nos Missions</a>
+                <a href="#article" class="block py-2 text-gray-600 hover:text-gray-800">Actualités</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Nous Contacter</a>
+                <a href="join_us.html" class="block py-2 text-gray-600 hover:text-gray-800">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Rejoignez notre association et faites la différence !</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Ensemble, nous bâtissons un avenir meilleur. Notre association, ÉcoAlliance, s'engage pour la protection de la faune et la flore. Rejoindre notre communauté, c'est participer activement à un projet porteur de sens et d'impact.
+            </p>
+        </div>
+        
+        <!-- Contact Content -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Company Info (Left) -->
+            <div class="w-full h-full lg:w-1/2 shadow-md">
+                <img src="images/joinus.jpg" 
+                             alt="Conférence climat" class="w-full rounded-xl h-full object-cover">
+            </div>
+            
+            <!-- Contact Form (Right) -->
+            <div class="w-full lg:w-1/2 bg-white rounded-xl shadow-md p-8 contact-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Envoyez-nous un message</h2>
+                
+                <form id="contactForm" class="space-y-6">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nom complet <span class="text-red-500">*</span></label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 form-input transition duration-300"
+                               placeholder="Votre nom">
+                    </div>
+
+                    <!-- Adress -->
+                    <div>
+                        <label for="adress" class="block text-sm font-medium text-gray-700 mb-1">Adresse postal <span class="text-red-500">*</span></label>
+                        <input type="text" id="adress" name="adress" required 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 form-input transition duration-300"
+                               placeholder="Votre adresse postal">
+                    </div>
+                    
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Adresse e-mail <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 form-input transition duration-300"
+                               placeholder="votre@email.com">
+                    </div>
+
+                    <!-- Telephone -->
+                    <div>
+                        <label for="telephone" class="block text-sm font-medium text-gray-700 mb-1">Numéro de téléphone <span class="text-red-500">*</span></label>
+                        <input type="telephone" id="telephone" name="telephone" required 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 form-input transition duration-300"
+                               placeholder="03 ## ### ###">
+                    </div>
+                    
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Motivation <span class="text-red-500">*</span></label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 form-input transition duration-300"
+                                  placeholder="Décrivez votre motivation..."></textarea>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" 
+                                class="w-full bg-indigo-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 submit-btn">
+                            Envoyer le message
+                        </button>
+                    </div>
+                    
+                    <!-- Success Message (hidden by default) -->
+                    <div id="successMessage" class="hidden p-4 bg-green-50 text-green-700 rounded-lg border border-green-200">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle mr-2 text-green-600"></i>
+                            <span>Votre message a bien été envoyé. Merci !</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-3xl text-green-400 mr-2"></i>
+                        <span class="text-xl font-bold">ÉcoAlliance</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Association loi 1901 reconnue d'intérêt général depuis 2010.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="missions.html" class="text-gray-400 hover:text-white transition">Nos Missions</a></li>
+                        <li><a href="#actualite" class="text-gray-400 hover:text-white transition">Actualités</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li> -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informations</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Nous contacter</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Faire un don</a></li> -->
+                        <li><a href="join_us.html" class="text-gray-400 hover:text-white transition">Devenir bénévole</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Partenariats</a></li> -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Légal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="mention-legale.html" class="text-gray-400 hover:text-white transition">Mentions légales</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Politique de confidentialité</a></li> -->
+                        <li><a href="plan-site.html" class="text-gray-400 hover:text-white transition">Plan du site</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Statuts de l'association</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 ÉcoAlliance. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

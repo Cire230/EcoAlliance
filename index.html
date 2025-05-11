@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉcoAlliance - Protection de l'environnement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-3xl text-green-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">ÉcoAlliance</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 font-medium py-2 px-1">Accueil</a>
+                    <a href="missions.html" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">Nos Missions</a>
+                    <a href="#article" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">Actualités</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">Nous Contacter</a>
+                    <a href="join_us.html" class="nav-link text-gray-600 hover:text-gray-800 font-medium py-2 px-1">S'inscrire</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-800 font-medium">Accueil</a>
+                <a href="missions.html" class="block py-2 text-gray-600 hover:text-gray-800">Nos Missions</a>
+                <a href="#article" class="block py-2 text-gray-600 hover:text-gray-800">Actualités</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Nous Contacter</a>
+                <a href="join_us.html" class="block py-2 text-gray-600 hover:text-gray-800">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Protégeons notre planète ensemble</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto animate-fade-in delay-100">
+                Chaque action compte. Rejoignez notre mouvement pour un avenir plus vert et durable.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 animate-fade-in delay-200">
+                <a href="join_us.html" class="btn-primary text-white font-bold py-3 px-8 rounded-full inline-block">
+                    Rejoindre l'association <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#" class="bg-white text-green-700 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-100 transition">
+                    Créer une antenne locale
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre engagement pour la planète</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    ÉcoAlliance rassemble des citoyens engagés pour protéger les écosystèmes, promouvoir des modes de vie durables et influencer les politiques environnementales.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="mission-card p-8 rounded-lg bg-gray-50 animate-fade-in delay-100">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Protection des forêts</h3>
+                    <p class="text-gray-600">
+                        Nous plantons des arbres et luttons contre la déforestation à travers des programmes de conservation et de reboisement.
+                    </p>
+                </div>
+                
+                <div class="mission-card p-8 rounded-lg bg-gray-50 animate-fade-in delay-200">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Économie circulaire</h3>
+                    <p class="text-gray-600">
+                        Nous promouvons le zéro déchet et le recyclage à travers des ateliers éducatifs et des initiatives communautaires.
+                    </p>
+                </div>
+                
+                <div class="mission-card p-8 rounded-lg bg-gray-50 animate-fade-in delay-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Protection des océans</h3>
+                    <p class="text-gray-600">
+                        Nos équipes organisent régulièrement des nettoyages de plages et militent contre la pollution plastique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="article" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos dernières actualités</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Découvrez nos dernières actions, événements et nouvelles initiatives pour protéger l'environnement.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md animate-fade-in delay-100">
+                    <div class="relative">
+                        <img src="images/Article (1).jpg" 
+                             alt="Nettoyage de plage" class="w-full h-48 object-cover">
+                        <div class="article-date">15 Juin 2023</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">S'engager pour la cause animale : Comment aider efficacement ?</h3>
+                        <p class="text-gray-600 mb-4">
+                            Découvrez les différentes actions et solutions pour protéger les animaux, qu'il s'agisse de sauvetages, d'adoptions ou de campagnes de sensibilisation.
+                        </p>
+                        <a href="articles.html" class="text-green-600 font-medium hover:text-green-800 transition flex items-center">
+                            Lire l'article <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md animate-fade-in delay-200">
+                    <div class="relative">
+                        <img src="images/Article (2).jpg" 
+                             alt="Atelier zéro déchet" class="w-full h-48 object-cover">
+                        <div class="article-date">2 Juin 2023</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Unis pour l’avenir : Les défis et ambitions de notre association</h3>
+                        <p class="text-gray-600 mb-4">
+                            Retour sur notre dernière réunion : discussions, projets à venir et engagement collectif pour renforcer l’impact de notre action.
+                        </p>
+                        <a href="articles.html" class="text-green-600 font-medium hover:text-green-800 transition flex items-center">
+                            Lire l'article <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md animate-fade-in delay-300">
+                    <div class="relative">
+                        <img src="images/Article (3).jpg" 
+                             alt="Conférence climat" class="w-full h-48 object-cover">
+                        <div class="article-date">20 Mai 2023</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Préserver la vie marine : Comment protéger les animaux des océans ?</h3>
+                        <p class="text-gray-600 mb-4">
+                            De la pollution plastique aux filets de pêche abandonnés, découvrez les enjeux et solutions pour préserver les espèces marines menacées.
+                        </p>
+                        <a href="articles.html" class="text-green-600 font-medium hover:text-green-800 transition flex items-center">
+                            Lire l'article <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 transition">
+                    Voir toutes les actualités <i class="fas fa-newspaper ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-green-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="images/Bandeau (2).jpg" 
+                         alt="Nature" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Nos valeurs fondamentales</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-hand-holding-heart text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Respect de la nature</h3>
+                                <p class="text-gray-600">
+                                    Nous considérons la nature comme un patrimoine commun à préserver pour les générations futures.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-users text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Action collective</h3>
+                                <p class="text-gray-600">
+                                    Nous croyons que les solutions les plus efficaces naissent de la collaboration et de l'intelligence collective.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-lightbulb text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Innovation écologique</h3>
+                                <p class="text-gray-600">
+                                    Nous soutenons et développons des solutions innovantes pour répondre aux défis environnementaux.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à faire la différence ?</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">
+                Que vous souhaitiez rejoindre notre association ou créer une nouvelle antenne dans votre région, nous sommes là pour vous accompagner.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="join_us.html" class="bg-white text-green-700 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-100 transition">
+                    Devenir membre <i class="fas fa-user-plus ml-2"></i>
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white font-bold py-3 px-8 rounded-full inline-block hover:bg-green-600 transition">
+                    Nous contacter <i class="fas fa-envelope ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-3xl text-green-400 mr-2"></i>
+                        <span class="text-xl font-bold">ÉcoAlliance</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Association loi 1901 reconnue d'intérêt général depuis 2010.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="missions.html" class="text-gray-400 hover:text-white transition">Nos Missions</a></li>
+                        <li><a href="#actualite" class="text-gray-400 hover:text-white transition">Actualités</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li> -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Informations</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Nous contacter</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Faire un don</a></li> -->
+                        <li><a href="join_us.html" class="text-gray-400 hover:text-white transition">Devenir bénévole</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Partenariats</a></li> -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Légal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="mention-legale.html" class="text-gray-400 hover:text-white transition">Mentions légales</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Politique de confidentialité</a></li> -->
+                        <li><a href="plan-site.html" class="text-gray-400 hover:text-white transition">Plan du site</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-white transition">Statuts de l'association</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 ÉcoAlliance. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
